@@ -48,13 +48,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>BasicConsoleIO.Program</StartupObject>
+    <StartupObject>SimpleCSharpApp.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Chapter 1\Calc.cs" />
+    <Compile Include="Chapter 2\SimpleCSharpConsoleApp.cs" />
     <Compile Include="Chapter 3\BasicConsoleIO.cs" />
     <Compile Include="Chapter 3\SimpleCSharpApp.cs" />
   </ItemGroup>
