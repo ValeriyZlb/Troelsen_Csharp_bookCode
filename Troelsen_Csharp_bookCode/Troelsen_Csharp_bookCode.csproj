@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>BasicDataTypes.Program</StartupObject>
+    <StartupObject>FunWithStrings.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -58,6 +58,7 @@
     <Compile Include="Chapter 2\SimpleCSharpConsoleApp.cs" />
     <Compile Include="Chapter 3\BasicConsoleIO.cs" />
     <Compile Include="Chapter 3\BasicDataTypes.cs" />
+    <Compile Include="Chapter 3\FunWithStrings.cs" />
     <Compile Include="Chapter 3\SimpleCSharpApp.cs" />
   </ItemGroup>
   <ItemGroup>
