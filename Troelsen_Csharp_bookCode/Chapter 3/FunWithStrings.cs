@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text;
 
 namespace FunWithStrings
 {
@@ -11,6 +12,11 @@ namespace FunWithStrings
             EscapeChars();
             DefiningVerbatimStrings();
             StringEquality();
+            StringEqualitySpecifyngCompareRules();
+            StringsAreImmutable();
+            StringsAreImmutable2();
+            FunWithStringBuilder();
+            StringInterpolation();
 
             Console.ReadLine();
         }
@@ -98,6 +104,54 @@ namespace FunWithStrings
             Console.WriteLine("Ignore case, Invarariant Culture: s1.IndexOf(\"E\", " +
                 "StringComparison.InvariantCultureIgnoreCase): {0}",
                 s1.IndexOf("E", StringComparison.InvariantCultureIgnoreCase));
+            Console.WriteLine();
+        }
+        static void StringsAreImmutable()
+        {
+            string s1 = "This is my string.";
+            Console.WriteLine("s1 = {0}", s1);
+
+            string upperString = s1.ToUpper();
+            Console.WriteLine("upperString = {0}", upperString);
+
+            Console.WriteLine("s1 = {0}", s1);
+
+            Console.WriteLine();
+        }
+        static void StringsAreImmutable2()
+        {
+            string s2 = "My other string";
+            s2 = "New string value";
+        }
+        static void FunWithStringBuilder()
+        {
+            Console.WriteLine("=> Using the StringBuilder:");
+            StringBuilder sb = new StringBuilder("**** Fantastic Games ****");
+            sb.Append("\n");
+            sb.AppendLine("Half-Life");
+            sb.AppendLine("Morrowind");
+            sb.AppendLine("Deus Ex" + "2");
+            sb.AppendLine("System Shock");
+            Console.WriteLine(sb.ToString());
+            sb.Replace("2", " Invinsible War");
+            Console.WriteLine(sb.ToString());
+            Console.WriteLine("sb has {0} chars.", sb.Length);
+            Console.WriteLine();
+        }
+        static void StringInterpolation()
+        {
+            Console.WriteLine("=> Using the StringInterpalation:");
+
+            int age = 4;
+            string name = "Soren";
+
+            string greeting = string.Format("Hello {0} you are {1} years old.", name, age);
+
+            string greeting2 = $"Hello {name} you are {age} years old.";
+
+            Console.WriteLine(greeting);
+            Console.WriteLine(greeting2);
+
             Console.WriteLine();
         }
     }
