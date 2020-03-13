@@ -10,6 +10,7 @@ namespace SimpleCSharpApp
             Console.WriteLine("Hello World!");
             Console.WriteLine();
             ShowEnvironmentDetails();
+            DisplayMessage();
             Console.ReadLine();
 
             return -1;
@@ -24,6 +25,11 @@ namespace SimpleCSharpApp
             Console.WriteLine("Number of processofrs: {0}", Environment.ProcessorCount);
 
             Console.WriteLine(".NET Version: {0}", Environment.Version);
+        }
+        static void DisplayMessage()
+        {
+            string userMessage = string.Format("100000 in hex is {0:x}", 100000);
+            System.Windows.MessageBox.Show(userMessage);
         }
     }
 }
