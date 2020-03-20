@@ -37,6 +37,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <CheckForOverflowUnderflow>true</CheckForOverflowUnderflow>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,7 +49,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <StartupObject>FunWithStrings.Program</StartupObject>
+    <StartupObject>ImplicitlyTypedLocalVars.Program</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -59,7 +60,9 @@
     <Compile Include="Chapter 3\BasicConsoleIO.cs" />
     <Compile Include="Chapter 3\BasicDataTypes.cs" />
     <Compile Include="Chapter 3\FunWithStrings.cs" />
+    <Compile Include="Chapter 3\ImplicitlyTypedLocalVars.cs" />
     <Compile Include="Chapter 3\SimpleCSharpApp.cs" />
+    <Compile Include="Chapter 3\TypeConversions.cs" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
